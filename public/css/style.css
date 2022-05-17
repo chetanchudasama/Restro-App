@@ -1,0 +1,245 @@
+/*general css*/
+/* html {
+  overflow: auto;
+} */
+body {
+  overflow: hidden;
+  color: #080040;
+  /* overflow-y: auto; */
+}
+body,
+.application {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+}
+.bg-img {
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  margin: 0 auto;
+}
+em {
+  font-style: normal;
+}
+
+/*button Style*/
+.v-application .v-btn.text-btn {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: Segoe UI;
+  color: #707070;
+  padding: 0;
+  border-radius: 0;
+  line-height: 24px;
+}
+.underline-btn .v-btn__content {
+  border-bottom: 1px solid #707070;
+}
+.primary-rounded-btn.v-btn:not(.v-btn--round).v-size--large {
+  height: 45px;
+  min-width: 264px;
+  font-size: 15px;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  font-family: "Avenir Heavy";
+}
+.v-btn.lng-btn {
+  margin: 15px 0 0;
+  float: left;
+}
+.v-btn.lng-btn .img-wrap {
+  width: 30px;
+  height: 30px;
+}
+.v-btn.lng-btn .img-wrap img {
+  width: 100%;
+  height: 100%;
+}
+.v-btn.lng-btn .img-wrap img.ar-img {
+  display: none;
+}
+.icon-text-btn {
+  min-width: 197px !important;
+  min-height: 45px;
+  font-size: 22px !important;
+  font-family: "Avenir Heavy";
+  text-transform: capitalize;
+  border-radius: 25px 0 0 25px;
+  letter-spacing: -0.53px;
+}
+.icon-text-btn .icon-wrap {
+  width: 15px;
+  height: 12px;
+  margin: 0 -42px 0 30px;
+}
+.icon-text-btn .icon-wrap img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+.back-btn {
+  position: absolute;
+  left: 0;
+  top: 25px;
+}
+.back-btn:hover:before {
+  background: transparent !important;
+}
+.back-btn img {
+  transform: rotate(180deg);
+  width: 20px;
+  height: 20px;
+}
+
+.arabic-lng .v-btn.lng-btn {
+  margin: 15px 0 0;
+  float: right;
+}
+.arabic-lng .v-btn.lng-btn .img-wrap img.en-img {
+  display: none;
+}
+.arabic-lng .v-btn.lng-btn .img-wrap img.ar-img {
+  display: inline-block;
+}
+.arabic-lng .back-btn {
+  left: auto;
+  right: 0;
+}
+ .arabic-lng .back-btn img {
+  transform: rotate(0deg);
+}
+/* typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #080040;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Avenir Heavy";
+}
+p,
+a {
+  font-family: "AvenirLTStd-Roman";
+}
+h1 {
+  font-size: 42px;
+  line-height: 50px;
+  letter-spacing: 0.51px;
+}
+.page-title {
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.38px;
+}
+.sec-title {
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.38px;
+  text-transform: uppercase;
+}
+
+.custom-modal {
+  border-radius: 20px;
+}
+
+.custom-modal .v-sheet.v-card {
+  border-radius: 20px;
+}
+
+.custom-modal.border-radius-none {
+  border-radius: 0px;
+}
+
+.custom-modal.border-radius-none .v-sheet.v-card {
+  border-radius: 0px;
+}
+
+.custom-modal .close-btn {
+  padding: 0 !important;
+  background-color: transparent !important;
+  box-shadow: none;
+  min-width: auto !important;
+  height: auto !important;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+.custom-modal .close-btn.theme--light.v-btn:before {
+  display: none;
+}
+
+.custom-modal .close-btn.theme--light.v-btn .v-ripple__container {
+  display: none;
+}
+
+/* scroll style */
+/* ::-webkit-scrollbar {
+  width: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #707070;
+  border-radius: 50px;
+} */
+
+/*snackbar design*/
+.v-snack__wrapper.v-sheet--outlined {
+  max-width: 320px;
+  border: thin solid #fa1111 !important;
+  border-radius: 50px;
+  margin: 0 auto 85px;
+}
+.v-snack__wrapper .v-snack__content {
+  padding: 8px 8px 8px 44px;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.19px;
+  color: #ff0023;
+  font-family: "Avenir Heavy";
+  min-height: inherit;
+  display: flex;
+  align-items: center;
+}
+.v-snack__wrapper .v-snack__content .icon-wrap {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 8px;
+}
+.v-snack__wrapper .v-snack__content .icon-wrap img {
+  width: 100%;
+  height: 100%;
+  vertical-align: top;
+}
+
+/* arabic style */
+.arabic-lng {
+  direction: rtl;
+}
+.arabic-lng * {
+  font-family: "DroidArabicKufi" !important;
+}
+.arabic-lng .page-title,
+.arabic-lng .sec-title {
+  font-weight: 700;
+}
+.arabic-lng .custom-modal .close-btn {
+  right: auto;
+  left: 10px;
+}

@@ -1,0 +1,34 @@
+#app .v-application .primary {
+  background-color: #fbaf02 !important;
+  border-color: #fbaf02 !important;
+}
+
+#app .v-application .secondary {
+  background-color: #080040 !important;
+  border-color: #080040 !important;
+}
+
+#app .v-application .primary--text {
+  color: #fbaf02 !important;
+  caret-color: #fbaf02 !important;
+}
+
+#app .v-application .secondary--text {
+  color: #080040 !important;
+  caret-color: #080040 !important;
+}
+
+#app .v-application .light-gray {
+  background-color: #afaea9 !important;
+  border-color: #afaea9 !important;
+}
+
+#app .v-application .gray--text {
+  color: #333a4d !important;
+  caret-color: #333a4d !important;
+}
+
+#app .v-application .green {
+  background-color: #07bb55 !important;
+  border-color: #07bb55 !important;
+}
